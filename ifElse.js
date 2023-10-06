@@ -1,36 +1,15 @@
-const nilaiTugas = 80;
-const nilaiUjian = 90;
+const suhu = 28;
 
-let gradeTugas;
-let gradeUjian;
-
-if (nilaiTugas >= 0 && nilaiTugas <= 100 && nilaiUjian >= 0 && nilaiUjian <= 100) {
-  if (nilaiTugas >= 90) {
-    gradeTugas = 'A';
-  } else if (nilaiTugas >= 80) {
-    gradeTugas = 'B';
-  } else if (nilaiTugas >= 70) {
-    gradeTugas = 'C';
-  } else if (nilaiTugas >= 60) {
-    gradeTugas = 'D';
-  } else {
-    gradeTugas = 'E';
-  }
-
-  if (nilaiUjian >= 90) {
-    gradeUjian = 'A';
-  } else if (nilaiUjian >= 80) {
-    gradeUjian = 'B';
-  } else if (nilaiUjian >= 70) {
-    gradeUjian = 'C';
-  } else if (nilaiUjian >= 60) {
-    gradeUjian = 'D';
-  } else {
-    gradeUjian = 'E';
-  }
-
-  console.log(`Nilai tugas: ${nilaiTugas}, grade tugas: ${gradeTugas}`);
-  console.log(`Nilai ujian: ${nilaiUjian}, grade ujian: ${gradeUjian}`);
+if (suhu < 0) {
+  console.log('Suhu sangat dingin. Pakailah pakaian hangat dan berhati-hatilah.');
+} else if (suhu >= 0 && suhu <= 10) {
+  console.log('Suhu dingin. Kenakan jaket tebal dan sarung tangan jika perlu.');
+} else if (suhu > 10 && suhu <= 20) {
+  console.log('Suhu sejuk. Kenakan jaket ringan atau pakaian hangat.');
+} else if (suhu > 20 && suhu <= 30) {
+  console.log('Suhu nyaman. Nikmati cuaca!');
+} else if (suhu > 30 && suhu <= 40) {
+  console.log('Suhu panas. Minum air yang cukup dan gunakan tabir surya.');
 } else {
-  console.log('Nilai tidak valid. Masukkan nilai antara 0 hingga 100.');
+  console.log('Suhu sangat panas. Hindari terlalu lama di luar ruangan.');
 }
